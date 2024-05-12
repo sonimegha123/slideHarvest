@@ -5,7 +5,8 @@ This PDF to PowerPoint Presentation Generator is a streamlit application designe
 **Note:** Currently it is capable to generate only one slide per query
 
 **Usage:**
-streamlit run slideHarvest.py
+1. Set up your OpenAI API key
+2. streamlit run slideHarvest.py
 
 **Dependencies:**
 streamlit: A Python library for building interactive web applications.
