@@ -54,9 +54,25 @@ def extract_info(response):
 
 # Streamlit app
 def main():
-    st.title("PDF to PowerPoint Presentation Generator")
-    st.write("Upload a PDF file and get a PowerPoint presentation with summarized bullet points!")
+    # Page layout
+    st.set_page_config(
+        page_title="PDF to PowerPoint Presentation Generator",
+        page_icon=":bar_chart:",
+        layout="centered",
+        initial_sidebar_state="auto",
+    )
 
+    # Title and description
+    st.title("PDF to PowerPoint Presentation Generator")
+    st.markdown(
+        """
+        Welcome to the **PDF to PowerPoint Presentation Generator**! This tool allows you to upload a PDF file 
+        containing textual information, input a query related to the document's content, and automatically generate 
+        a PowerPoint presentation slide based on the query.
+        """
+    )
+    st.write("Currently, this tool is capable of generating only one slide per query.")
+    
     # Upload PDF file
     pdf_file = st.file_uploader("Upload PDF file", type=["pdf"])
 
