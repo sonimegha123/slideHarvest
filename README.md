@@ -8,7 +8,7 @@ This PDF to PowerPoint Presentation Generator is a streamlit application designe
 1. Set up your OpenAI API key
 2. streamlit run slideHarvest.py
 
-**Dependencies:**
+**Dependencies:**  
 streamlit: A Python library for building interactive web applications.  
 llama_index: A library for natural language processing and text summarization.  
 openai: OpenAI Python library for accessing OpenAI's GPT models.  
